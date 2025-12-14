@@ -1,7 +1,7 @@
 // Array de usuarios predefinidos
 let users = [
-  { id: 1, name: "Juanita", email: "juanis@example.com" },
-  { id: 2, name: "Isa", email: "isa@example.com" },
+  { id: 1, name: "Juan", email: "juan@example.com" },
+  { id: 2, name: "María", email: "maria@example.com" },
   { id: 3, name: "Carlos", email: "carlos@example.com" }
 ];
 
