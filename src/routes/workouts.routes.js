@@ -1,14 +1,17 @@
 import { Router } from "express";
 import {
-  getWorkouts, getWorkoutById, createWorkout,
-  updateWorkout, updateWorkoutPartial, deleteWorkout
-} from "../controllers/workouts.controller.js";
+  getUsers, getUserById, createUser, addUserFromGet,
+  updateUser, updateUserPartial, deleteUser
+} from "../controllers/users.controller.js";
 
 const router = Router();
-router.get("/", getWorkouts);
-router.get("/:id", getWorkoutById);
-router.post("/", createWorkout);
-router.put("/:id", updateWorkout);
-router.patch("/:id", updateWorkoutPartial);
-router.delete("/:id", deleteWorkout);
+
+router.get("/", getUsers);
+router.get("/add", addUserFromGet);
+router.get("/:id", getUserById);
+router.post("/", createUser);
+router.put("/:id", updateUser);
+router.patch("/:id", updateUserPartial);
+router.delete("/:id", deleteUser);
+
 export default router;
